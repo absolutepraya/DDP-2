@@ -57,8 +57,11 @@ public class Lab2 {
         if (binary.isEmpty()) {
             return "";
         }
-        // Convert binary ke desimal
-        int decimal = Integer.parseInt(binary, 2 /* Base 2 untuk binary */);
+        // Convert binary ke desimal menggunakan loop
+        int decimal = 0;
+        for (int i = 0; i < binary.length(); i++) {
+            decimal += (binary.charAt(i) - '0') * Math.pow(2, binary.length() - 1 - i);
+        }
         // Convert desimal ke ASCII
         return Character.toString((char) decimal);
     }
