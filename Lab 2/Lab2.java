@@ -6,8 +6,8 @@ public class Lab2 {
         Scanner inp = new Scanner(System.in);
         System.out.print("Masukkan confession dalam bentuk kode (ketik 'selesai' untuk keluar): \n");
 
-        String inpString; // Initialize variabel untuk input
-        String outpString = ""; // Define variabel untuk output
+        String inpString; // Initialize variabel untuk inp
+        String outpString = ""; // Define variabel untuk outp
 
         // Iterate setiap confession yang dipisahkan oleh new line
         while (true) {
